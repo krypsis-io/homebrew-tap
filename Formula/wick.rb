@@ -5,21 +5,21 @@
 class Wick < Formula
   desc "Fast, zero-config secret and PII redaction for any text stream"
   homepage "https://krypsis.io/wick"
-  version "0.1.0"
+  version "0.1.1"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/krypsis-io/wick/releases/download/v0.1.0/wick_0.1.0_darwin_amd64.tar.gz"
-      sha256 "124dee04d8fbce17b2c57c2c297be3d67a9feed610f778eed6a4be1a6dcb4ca7"
+      url "https://github.com/krypsis-io/wick/releases/download/v0.1.1/wick_0.1.1_darwin_amd64.tar.gz"
+      sha256 "a2af7722a63b964ef51b94b76ef8eb1bfa54b56f9b4be450874a69cf61a4feef"
 
       define_method(:install) do
         bin.install "wick"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/krypsis-io/wick/releases/download/v0.1.0/wick_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b5a743d1123b1168409644f6916756144416999e70bb6697ffaa3bd17a6139d8"
+      url "https://github.com/krypsis-io/wick/releases/download/v0.1.1/wick_0.1.1_darwin_arm64.tar.gz"
+      sha256 "5325a8b18663761f048f24491b3dd50af7c6c193ad714d895452dec2fe82b9c4"
 
       define_method(:install) do
         bin.install "wick"
@@ -29,15 +29,15 @@ class Wick < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/krypsis-io/wick/releases/download/v0.1.0/wick_0.1.0_linux_amd64.tar.gz"
-      sha256 "bed1edc60ac3fa7acd293d8151368be81f49ab58750786caf9ccdbbd3a935ea1"
+      url "https://github.com/krypsis-io/wick/releases/download/v0.1.1/wick_0.1.1_linux_amd64.tar.gz"
+      sha256 "3e7d47095494bbe51f659e8b30d88ae13c4ff2b8618b80d5407d3c8971028178"
       define_method(:install) do
         bin.install "wick"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/krypsis-io/wick/releases/download/v0.1.0/wick_0.1.0_linux_arm64.tar.gz"
-      sha256 "baf8d0d654195dd37f2ef2827e10744d8c5140b8ab2cb56992f6ae02eb8dae7e"
+      url "https://github.com/krypsis-io/wick/releases/download/v0.1.1/wick_0.1.1_linux_arm64.tar.gz"
+      sha256 "7cc222fef3cfedda5c032fc4175583bd617d42ace6fdf24fcb28f5c940c44191"
       define_method(:install) do
         bin.install "wick"
       end
